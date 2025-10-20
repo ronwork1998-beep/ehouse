@@ -223,7 +223,7 @@
                     screens: {
                         'xs': '421px',
                         '600-xs': '600px',
-                        'custom-xl': '1200px',  // 自訂斷點
+                        'custom-xl': '1200px',
                         '1400-xl': '1400px'
                     },
                     fontSize: {
@@ -233,6 +233,7 @@
             }
         }
     </script>
+
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Arial, sans-serif;
@@ -308,9 +309,9 @@
                 class="absolute bottom-0 left-0 -z-10 w-full custom-xl:h-[650px] h-[550px] bg-gradient-to-t from-ebayhouse/30 to-transparent pointer-events-none">
             </div>
 
-            <div class="mt-3 custom-xl:mx-[10%] mx-10">
+            <div class="mt-2 custom-xl:!mx-[10%] mx-3 xs:!mx-10 ">
                 <button class="flex items-center text-darkgray hover:text-gray-800 hover:bg-transparent ">
-                    <svg class="custom-xl:w-6 custom-xl:h-6 w-8 h-8" fill="none" stroke="currentColor"
+                    <svg class="custom-xl:w-6 custom-xl:h-6 w-8 h-8 " fill="none" stroke="currentColor"
                         viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -333,20 +334,22 @@
 
 
                     <!-- 姓名區 -->
-                    <div class="text-center mb-2  items-center">
+                    <div class="text-center mb-4  items-center relative">
 
 
-                        <h2 class="text-darkgray text-xl font-notoSerif font-bold">地產顧問</h2>
-                        <div class="relative">
-                            <h1 class="text-xl40  font-semibold text-ebayhouse mb-1 font-roboto">葉鈞宇</h1>
-                            <p
-                                class="text-darkgray text-lg absolute 600-xs:top-4 600-xs:right-[-8px] right-[-20px] top-[17px]">
+                        <h2 class="text-darkgray text-xl font-notoSerif font-bold custom-xl:absolute text-left ">
+                            地產顧問師</h2>
+
+
+                        <div class="flex items-end  mt-1 custom-xl:!mt-8 pl-3">
+                            <h1 class="text-xl40  font-semibold text-ebayhouse mr-1 font-roboto">葉鈞宇</h1>
+                            <p class="text-darkgray text-lg 600-xs:top-4  right-[-20px] top-[17px]">
                                 經理</p>
                         </div>
-                        <p class="text-center text-darkgray">資深經理｜解決問題高手</p>
+                        <p class="text-left text-darkgray text-lg pl-3">資深經理｜解決問題高手</p>
 
 
-                        <div class="flex w-full items-center justify-center">
+                        <!-- <div class="flex w-full items-center justify-center">
                             <a href="tel:0966-40-8080"
                                 class=" w-12 h-12 text-darkgray  flex items-center justify-center hover:text-gray-800 transition ">
 
@@ -377,10 +380,10 @@
                                         d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
                                 </svg>
 
-                                <!-- <span class="text-white font-bold text-sm">LINE</span> -->
+                                <span class="text-white font-bold text-sm">LINE</span>
 
                             </a>
-                        </div>
+                        </div> -->
                     </div>
 
 
@@ -401,7 +404,7 @@
                     <!-- 手機板照片 -->
 
                     <div class="custom-xl:hidden w-[80%] flex  bottom-0 ">
-                        <img src="./mobile/葉鈞宇_mobile.png" alt="葉鈞宇" class=" h-auto  object-contain">
+                        <img src="./img/mobile/葉鈞宇_mobile.png" alt="葉鈞宇" class=" h-auto  object-contain mx-auto">
                     </div>
 
                     <div class="w-[90%] xs:w-[80%] custom-xl:w-auto ">
@@ -455,19 +458,20 @@
                     </div>
                     <!-- 介紹 -->
                     <div
-                        class=" bg-white rounded-3xl shadow-lg p-2 600-xs:p-4 custom-xl:!p-8  custom-xl:!text-left text-center w-[80%] custom-xl:w-auto  mb-4 ">
+                        class=" bg-white rounded-3xl shadow p-4 !pl-[10%] custom-xl:!p-8 custom-xl:pl-8  text-left w-[80%] custom-xl:w-auto  mb-4 ">
                         <!-- Service Area -->
                         <h3 class="font-bold text-ebayhouse  font-notoSerif">服務區域</h3>
-                        <p class="text-darkgray text-lg">專營萬華、中山區中古屋</p>
+                        <p class="text-darkgray text-lg">大臺北 法拍屋攔截代標｜房屋買賣</p>
 
                         <!-- Experience -->
-                        <h3 class="font-bold text-ebayhouse  font-notoSerif">經歷</h3>
-                        <p class="text-darkgray text-lg ">2023.6-2025.10<br>住商不動產-中山捷運加盟</p>
+                        <h3 class="font-bold text-ebayhouse  font-notoSerif">資歷</h3>
+                        <p class="text-darkgray text-lg ">台灣地產 資深經理<br>2024年起幫客戶節省成本 500萬元組<br>競賽第一名</p>
+                        <!-- 2024年起幫客戶節省成本 500萬元組，競賽第一名 -->
 
 
                         <!-- Certification -->
                         <h3 class="font-bold text-ebayhouse  font-notoSerif">專業認證</h3>
-                        <p class="text-darkgray text-lg">獲得【不動產營業員】職業證照</p>
+                        <p class="text-darkgray text-lg">臺北市危老重建推動師</p>
 
                     </div>
 
@@ -522,7 +526,6 @@
 
                 <!-- 假資料，請增加收藏案件功能-->
                 <section class="findings_wrap">
-
                     <div class="findings-grid hotGoods">
                         <div class="property-card" title="台北市萬華區">
                             <div class="imgBox">
@@ -602,32 +605,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="property-card" title="台北市大安區">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4740">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/fc3e506f511214f9cba70144edfe15d2.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
 
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>台北市大安區信義路四段263號14樓-5</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">1,767</span>萬</p>
-                                    <p>類型:<span>大樓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">19.49</span>坪</p>
-                                    <p>單坪:<span class="num">91</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
                         <div class="property-card" title="台北市大安區A07 大安收租黃金屋*">
                             <div class="imgBox">
                                 <a href="https://www.ebayhouse.com.tw/house/show/4219">
@@ -680,32 +658,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="property-card" title="新北市板橋區">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4820">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/814233098be1547989dd13c6e99363d7.png"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
 
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>新北市板橋區國光路71號10樓</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">1,538</span>萬</p>
-                                    <p>類型:<span>大樓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">47.08</span>坪</p>
-                                    <p>單坪:<span class="num">46</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
                         <div class="property-card" title="台北市北投區">
                             <div class="imgBox">
                                 <a href="https://www.ebayhouse.com.tw/house/show/5744">
@@ -758,266 +711,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="property-card" title="新北市新莊區">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/5707">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/8cfb95e2a0208f559849509bb39e3187.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
 
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>新北市新莊區裕民街134巷2號6樓</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">960</span>萬</p>
-                                    <p>類型:<span>大樓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">24.09</span>坪</p>
-                                    <p>單坪:<span class="num">44</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="新北市新莊區">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4863">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/374459aac5b0ceb8da86f1e1e7dcb3d7.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>新北市新莊區西盛街188號15樓</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">1,368</span>萬</p>
-                                    <p>類型:<span>大樓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">55.30</span>坪</p>
-                                    <p>單坪:<span class="num">31</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="台北市中山區C72 中山區停車位*">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4046">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/7SUUEM6MCJ43WQLZNTH77LWVUQ.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>台北市中山區德惠街</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">90</span>萬</p>
-                                    <p>類型:<span>大樓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">12.12</span>坪</p>
-                                    <p>單坪:<span class="num">0</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="基隆市中正區">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4995">
-                                    <img src="https://www.ebayhouse.com.tw/images/no-picture.gif" border="0"
-                                        align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>基隆市中正區和二路50-3號4樓</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">97</span>萬</p>
-                                    <p>類型:<span>公寓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">22.47</span>坪</p>
-                                    <p>單坪:<span class="num">4</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="新北市板橋區">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4821">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/6216a0e6804c2da809c00404ad7a1ed6.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>新北市板橋區館前西路275號17樓-1</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">2,311</span>萬</p>
-                                    <p>類型:<span>大樓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">88.02</span>坪</p>
-                                    <p>單坪:<span class="num">48</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="桃園市大園區M33青埔A18大空間含車位">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4150">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/BSAKJYPWTT6LWNXDB2LPX4E88S.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>桃園市大園區興德路</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">1,458</span>萬</p>
-                                    <p>類型:<span>大樓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">38.53</span>坪</p>
-                                    <p>單坪:<span class="num">0</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="新北市板橋區">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4657">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/568d87ab0966e75d7757f7d0fa2c5425.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>新北市板橋區金門街19巷6號3樓</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">762</span>萬</p>
-                                    <p>類型:<span>公寓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">35.13</span>坪</p>
-                                    <p>單坪:<span class="num">22</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="新北市板橋區">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4861">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/f043b20b984d0f5a2b39dee041675e45.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>新北市板橋區中山路二段553巷4弄13號4樓</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">955</span>萬</p>
-                                    <p>類型:<span>公寓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">46.91</span>坪</p>
-                                    <p>單坪:<span class="num">20</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="台北市大安區A06 台大師大三小店面">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4067">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/3822Z93N5VZ7YGZQ9EEACSWCM2.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>台北市大安區復興南路二段</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">3,680</span>萬</p>
-                                    <p>類型:<span>大樓</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">14.99</span>坪</p>
-                                    <p>單坪:<span class="num">0</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-card" title="台北市大安區A32 國館巨蛋鑽石金店面">
-                            <div class="imgBox">
-                                <a href="https://www.ebayhouse.com.tw/house/show/4088">
-                                    <img src="https://www.ebayhouse.com.tw/images/product/9BGZ63B9C2P7WYVAUS4EPVKQDS.jpg"
-                                        border="0" align="absmiddle" alt="" class="img-fluid" />
-                                </a>
-                                <div class="heart-icon" title="加入收藏">
-                                    <button type="button" onclick="_alert('請先登入')" class="notHeart">
-                                        <img src="https://www.ebayhouse.com.tw/images/heart_not.svg" alt="加入收藏">
-                                    </button>
-
-
-                                </div>
-                            </div>
-                            <div class="property-info">
-                                <h2>台北市大安區延吉街</h2>
-                                <div class="info-row">
-                                    <p>底價:<span class="price">19,800</span>萬</p>
-                                    <p>類型:<span>店面</span></p>
-                                </div>
-                                <div class="info-row">
-                                    <p>總坪:<span class="num">75.03</span>坪</p>
-                                    <p>單坪:<span class="num">0</span>萬</p>
-                                </div>
-                            </div>
-                        </div>
                         <div class="property-card" title="台北市中山區C60 晴光迷你店辦">
                             <div class="imgBox">
                                 <a href="https://www.ebayhouse.com.tw/house/show/4304">
@@ -1047,8 +741,12 @@
 
                     </div>
                     <!-- //findings-grid End -->
+
+
+
                 </section>
                 <!--物件列表 end-->
+
 
 
 
@@ -1065,15 +763,33 @@
 
 
         <!-- 社群聯絡按鈕 -->
-        <a href="https://lin.ee/NNci62h" target="_blank" class="social-btn line-btn" title="官方 LINE">
-            <i class="fab fa-line !text-2xl"></i>
+        <a href="https://lin.ee/NNci62h" target="_blank" class="social-btn line-btn" title="LINE">
+            <!-- <i class="fab fa-line !text-2xl"></i> -->
+            <svg role="img" viewBox="0 0 24 24" fill="currentColor" height="30" width="30"
+                xmlns="http://www.w3.org/2000/svg">
+                <title />
+                <path
+                    d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+            </svg>
         </a>
         <a href="https://www.facebook.com/share/19UKqC5mZA/?mibextid=wwXIfr" target="_blank"
             class="social-btn facebook-btn" title="Facebook">
-            <i class="fab fa-facebook-f !text-2xl"></i>
+            <!-- <i class="fab fa-facebook-f !text-2xl"></i> -->
+            <svg style="enable-background:new 0 0 24 24;" fill="currentColor" height="30" width="30" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20,3H4C1.8,3,0,4.8,0,7v10c0,2.2,1.8,4,4,4h16c2.2,0,4-1.8,4-4V7C24,4.8,22.2,3,20,3z M21.6,8.8l-7.9,5.3   c-0.5,0.3-1.1,0.5-1.7,0.5s-1.2-0.2-1.7-0.5L2.4,8.8C2,8.5,1.9,7.9,2.2,7.4C2.5,7,3.1,6.9,3.6,7.2l7.9,5.3c0.3,0.2,0.8,0.2,1.1,0   l7.9-5.3c0.5-0.3,1.1-0.2,1.4,0.3C22.1,7.9,22,8.5,21.6,8.8z"
+                    id="email" />
+            </svg>
         </a>
-        <a href="tel:02-2392-8989" class="social-btn phone-btn" title="撥打電話">
-            <i class="material-icons !text-2xl">phone</i>
+        <a href="tel:02-2392-8989" class="social-btn phone-btn " title="撥打電話">
+            <!-- <i class="material-icons !text-2xl">phone</i> -->
+            <svg class="bi bi-telephone-fill" fill="currentColor" height="30" width="30" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                    fill-rule="evenodd" />
+            </svg>
         </a>
 
 
@@ -1128,5 +844,3 @@
 </body>
 
 </html>
-
-
